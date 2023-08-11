@@ -5,7 +5,7 @@ A simple Linktree-esque website to hold important links so that I don't have to 
 </p>
 
 <p align="center">
-Check it out live here: [TODO]
+Check it out live <a href="https://davinotdavid.github.io/devlinks/">here</a>!
 </p>
 
 <p align="center">
