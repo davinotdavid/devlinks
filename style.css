@@ -39,8 +39,8 @@ body * {
 #container {
   width: 100%;
   max-width: 500px;
-  margin: 56px auto 0px;
-  padding: 0 24px;
+  margin: 0 auto;
+  padding: 56px 24px 0px;
 }
 
 #profile {
@@ -76,11 +76,16 @@ body * {
   background: white var(--switch-image-url) no-repeat center;
   border: 0;
   border-radius: 50%;
+  animation: slide-right-to-left 300ms;
+}
+
+#switch button:hover {
+  outline: 8px solid var(--button-bg-color-hover);
+  cursor: pointer;
 }
 
 .light #switch button {
-  right: 0;
-  left: initial;
+  animation: slide-left-to-right 300ms forwards;
 }
 
 #switch span {
@@ -161,5 +166,27 @@ footer {
 
   .light {
     --background-image-url: url("./assets/bg-desktop-light.jpg");
+  }
+}
+
+/* ------------------------------------- */
+
+@keyframes slide-left-to-right {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-right-to-left {
+  from {
+    left: 50%;
+  }
+
+  to {
+    left: 0;
   }
 }
